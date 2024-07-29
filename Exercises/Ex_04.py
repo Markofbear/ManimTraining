@@ -1,3 +1,5 @@
+#Draw the popular frontend JavaScript library Vue's logo in Manim.
+
 from manim import *
 
 class Ex_04(Scene):

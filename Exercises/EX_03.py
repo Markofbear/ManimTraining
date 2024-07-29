@@ -1,3 +1,5 @@
+#Draw a heart using two circles and a square, as seen in the following picture.
+
 from manim import *
 
 class Ex_03(Scene):

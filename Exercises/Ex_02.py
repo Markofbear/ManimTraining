@@ -1,3 +1,5 @@
+#Move a circle to the upper left corner, and position several objects in a row to the right, aligned with the top edge of the circle, as shown in the following picture, try doing it with a loop.
+
 from manim import *
 
 

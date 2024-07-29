@@ -1,3 +1,5 @@
+# Write code in Manim to replicate the following picture. 
+
 from manim import *
 
 class Ex_01(Scene):
