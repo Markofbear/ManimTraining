@@ -16,3 +16,8 @@ semi_circle = VMobject(**fig_kwargs).set_points(
 """
 
 from manim import *
+
+class ex_05(Scene):
+    def construct(yinyang):
+    
+    
