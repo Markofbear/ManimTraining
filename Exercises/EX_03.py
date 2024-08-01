@@ -12,7 +12,7 @@ class Ex_03(Scene):
         square = Square(**red).set(height=3)
         rotate = {"angle":-PI/4}
 
-
+        
         l_circle.shift(LEFT*1)
         r_circle.shift(RIGHT*1)
         square.shift(DOWN*1)
