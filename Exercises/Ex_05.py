@@ -18,19 +18,26 @@ semi_circle = VMobject(**fig_kwargs).set_points(
 from manim import *
 
 class ex_05(Scene):
-    def construct(yinyang):
-        w_fill = {"fill_opacity": 1}
+    def construct(yinyan):
+        fill = {"fill_opacity": 1}
+        
 
-        w_circle = Circle(color=WHITE).set(height=5)
+        w_circle = Circle(color=WHITE).set(height=6)
         w_circle.rotate(PI / 2)  
         
-        semi_circle = VMobject(**w_fill).set_points(
+        semi_circle = VMobject(**fill).set_points(
             w_circle.points[:int(len(w_circle.points) / 2)]
         )
 
-        b_circle = Circle(color=WHITE, **w_fill).set(height=1)
-        b_circle.shift(1 * DOWN + 1 * RIGHT)
+        u_circle = Circle(COLOR=WHITE, **fill)
+        
+        sw_circle = Circle(color=BLACK, **fill).set(height=1.5)
+        sw_circle.shift(1.5 * UP)
+        sb_circle = Circle(color=WHITE, **fill).set(height=1.5)
+        sb_circle.shift(1.5 * DOWN)
 
-        yinyang.add(w_circle, semi_circle, b_circle)
+
+
+        yinyan.add(w_circle, semi_circle, sb_circle,sw_circle)
 
 
