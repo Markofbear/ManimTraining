@@ -34,10 +34,13 @@ class ex_05(Scene):
         sb_circle = Circle(color=WHITE, **fill).set(height=1.5)
         sb_circle.shift(1.5 * UP)
         
-        u_circle = Circle(color=WHITE, **fill).set(height=3)
-        u_circle.shift(1.5 * DOWN)
+        d_circle = Circle(color=WHITE, **fill).set(height=3)
+        d_circle.shift(1.5 * DOWN)
+
+        u_circle = Circle(color=BLACK, **fill).set(height=3)
+        u_circle.shift(1.5 * UP)
 
         # Add elements in the correct order
-        self.add(w_circle, semi_circle, u_circle, sb_circle, sw_circle)
+        self.add(w_circle, semi_circle, d_circle, u_circle, sb_circle, sw_circle)
 
 
