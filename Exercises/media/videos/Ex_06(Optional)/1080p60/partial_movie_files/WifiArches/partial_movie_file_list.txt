@@ -1,0 +1,3 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/ManimCE/Exercises/media/videos/Ex_06(Optional)/1080p60/partial_movie_files/WifiArches/3977891868_3664710433_223132457.mp4'
+file 'file:C:/ManimCE/Exercises/media/videos/Ex_06(Optional)/1080p60/partial_movie_files/WifiArches/2852726489_3890345977_4097177066.mp4'
