@@ -39,6 +39,5 @@ class ex_05(Scene):
         u_circle = Circle(color=BLACK, **fill).set(height=2.92)
         u_circle.shift(1.5 * UP)
 
-        # Add elements in the correct order
         self.add(w_circle, semi_circle, d_circle, u_circle, sb_circle, sw_circle)
 
