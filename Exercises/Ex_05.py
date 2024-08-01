@@ -14,7 +14,6 @@ semi_circle = VMobject(**fig_kwargs).set_points(
 
 -----------
 """
-
 from manim import *
 
 class ex_05(Scene):
@@ -37,10 +36,9 @@ class ex_05(Scene):
         d_circle = Circle(color=WHITE, **fill).set(height=3)
         d_circle.shift(1.5 * DOWN)
 
-        u_circle = Circle(color=BLACK, **fill).set(height=3)
+        u_circle = Circle(color=BLACK, **fill).set(height=2.92)
         u_circle.shift(1.5 * UP)
 
         # Add elements in the correct order
         self.add(w_circle, semi_circle, d_circle, u_circle, sb_circle, sw_circle)
-
 
