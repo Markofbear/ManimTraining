@@ -22,20 +22,20 @@ class ex_05(Scene):
         fill = {"fill_opacity": 1}
 
         w_circle = Circle(color=WHITE).set(height=6)
-        w_circle.rotate(PI / 2)
+        w_circle.rotate(-PI / 2)
 
         semi_circle = VMobject(**fill).set_points(
             w_circle.points[:int(len(w_circle.points) / 2)]
         )
 
         sw_circle = Circle(color=BLACK, **fill).set(height=1.5)
-        sw_circle.shift(1.5 * UP)
+        sw_circle.shift(1.5 * DOWN)
         
         sb_circle = Circle(color=WHITE, **fill).set(height=1.5)
-        sb_circle.shift(1.5 * DOWN)
+        sb_circle.shift(1.5 * UP)
         
         u_circle = Circle(color=WHITE, **fill).set(height=3)
-        u_circle.shift(1.5 * UP)
+        u_circle.shift(1.5 * DOWN)
 
         # Add elements in the correct order
         self.add(w_circle, semi_circle, u_circle, sb_circle, sw_circle)
