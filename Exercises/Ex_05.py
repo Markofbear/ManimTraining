@@ -19,5 +19,13 @@ from manim import *
 
 class ex_05(Scene):
     def construct(yinyang):
-    
-    
+      
+
+      w_fill = {"fill_opacity":1}
+      w_circle = Circle(color=WHITE,**w_fill).set(height=5)
+
+
+
+      yinyang.add(w_circle)
+
+
