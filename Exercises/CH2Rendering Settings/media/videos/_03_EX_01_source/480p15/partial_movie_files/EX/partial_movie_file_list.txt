@@ -1,0 +1,11 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/ManimCE/Exercises/CH2Rendering Settings/media/videos/_03_EX_01_source/480p15/partial_movie_files/EX/624642324_123554531_3014370397.mp4'
+file 'file:C:/ManimCE/Exercises/CH2Rendering Settings/media/videos/_03_EX_01_source/480p15/partial_movie_files/EX/624642324_3259668778_257708193.mp4'
+file 'file:C:/ManimCE/Exercises/CH2Rendering Settings/media/videos/_03_EX_01_source/480p15/partial_movie_files/EX/624642324_1704852926_2989000089.mp4'
+file 'file:C:/ManimCE/Exercises/CH2Rendering Settings/media/videos/_03_EX_01_source/480p15/partial_movie_files/EX/624642324_4076669069_352670952.mp4'
+file 'file:C:/ManimCE/Exercises/CH2Rendering Settings/media/videos/_03_EX_01_source/480p15/partial_movie_files/EX/624642324_1704852926_2460950908.mp4'
+file 'file:C:/ManimCE/Exercises/CH2Rendering Settings/media/videos/_03_EX_01_source/480p15/partial_movie_files/EX/624642324_2991336077_2666435393.mp4'
+file 'file:C:/ManimCE/Exercises/CH2Rendering Settings/media/videos/_03_EX_01_source/480p15/partial_movie_files/EX/624642324_1704852926_1472777143.mp4'
+file 'file:C:/ManimCE/Exercises/CH2Rendering Settings/media/videos/_03_EX_01_source/480p15/partial_movie_files/EX/624642324_1420957156_2046585664.mp4'
+file 'file:C:/ManimCE/Exercises/CH2Rendering Settings/media/videos/_03_EX_01_source/480p15/partial_movie_files/EX/624642324_1704852926_1026300636.mp4'
+file 'file:C:/ManimCE/Exercises/CH2Rendering Settings/media/videos/_03_EX_01_source/480p15/partial_movie_files/EX/624642324_3447008208_2588459187.mp4'
