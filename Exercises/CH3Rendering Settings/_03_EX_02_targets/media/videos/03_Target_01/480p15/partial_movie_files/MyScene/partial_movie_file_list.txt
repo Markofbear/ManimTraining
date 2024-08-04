@@ -1,0 +1,3 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/ManimCE/Exercises/CH3Rendering Settings/_03_EX_02_targets/media/videos/03_Target_01/480p15/partial_movie_files/MyScene/1185818338_2131154240_223132457.mp4'
+file 'file:C:/ManimCE/Exercises/CH3Rendering Settings/_03_EX_02_targets/media/videos/03_Target_01/480p15/partial_movie_files/MyScene/624642324_1704852926_747000769.mp4'
