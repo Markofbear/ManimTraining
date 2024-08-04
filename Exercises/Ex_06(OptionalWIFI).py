@@ -21,7 +21,7 @@ class Ex_06(Scene):
         rectangle1.rotate(60 * DEGREES)
         rectangle1.shift(UP *2, RIGHT * 3)
 
-        rectangle2 = Rectangle(width=4.5, height=3, color=BLUE, **fill)
+        rectangle2 = Rectangle(width=4.5, height=3, color=BLACK, **fill)
         rectangle2.rotate(-60 * DEGREES)
         rectangle2.shift(UP * 2, LEFT * 3)
 
