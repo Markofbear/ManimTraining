@@ -1,0 +1,2 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/ManimCE/Exercises/media/videos/Ex_06(Optional)/1080p60/partial_movie_files/Ex_06/3977891868_634017564_1611419266.mp4'
