@@ -1,0 +1,4 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/ManimCE/Exercises/CH6 Import Assets/media/videos/_06_EX_01_solution_mexico/1080p60/partial_movie_files/MexicoBandera/3977891868_1324124247_223132457.mp4'
+file 'file:C:/ManimCE/Exercises/CH6 Import Assets/media/videos/_06_EX_01_solution_mexico/1080p60/partial_movie_files/MexicoBandera/2852726489_1755946114_4265838457.mp4'
+file 'file:C:/ManimCE/Exercises/CH6 Import Assets/media/videos/_06_EX_01_solution_mexico/1080p60/partial_movie_files/MexicoBandera/2852726489_1704852926_4241254990.mp4'
