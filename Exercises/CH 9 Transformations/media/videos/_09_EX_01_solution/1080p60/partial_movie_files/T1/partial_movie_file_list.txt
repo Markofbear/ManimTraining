@@ -1,0 +1,7 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/ManimCE/Exercises/CH 9 Transformations/media/videos/_09_EX_01_solution/1080p60/partial_movie_files/T1/3977891868_202170504_223132457.mp4'
+file 'file:C:/ManimCE/Exercises/CH 9 Transformations/media/videos/_09_EX_01_solution/1080p60/partial_movie_files/T1/2852726489_1704852926_1704976182.mp4'
+file 'file:C:/ManimCE/Exercises/CH 9 Transformations/media/videos/_09_EX_01_solution/1080p60/partial_movie_files/T1/2852726489_1774848587_264388462.mp4'
+file 'file:C:/ManimCE/Exercises/CH 9 Transformations/media/videos/_09_EX_01_solution/1080p60/partial_movie_files/T1/2852726489_1704852926_316343373.mp4'
+file 'file:C:/ManimCE/Exercises/CH 9 Transformations/media/videos/_09_EX_01_solution/1080p60/partial_movie_files/T1/2852726489_1271364430_338134228.mp4'
+file 'file:C:/ManimCE/Exercises/CH 9 Transformations/media/videos/_09_EX_01_solution/1080p60/partial_movie_files/T1/2852726489_1704852926_732432444.mp4'
