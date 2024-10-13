@@ -63,9 +63,9 @@ def hello_world():
         self.play(AnimationGroup(Create(highlight), Create(highlight1), Create(highlight2), lag_ratio=0), run_time=2)  
         self.wait(2)
 
-        self.remove(highlight1)
+        self.remove(highlight2)
 
-        self.play(AnimationGroup(FadeOut(highlight), FadeOut(highlight2), lag_ratio=0.5), run_time=2)  
+        self.play(AnimationGroup(FadeOut(highlight), FadeOut(highlight1), lag_ratio=0.5), run_time=2)  
         self.wait(1)
 
         title_highlight = SurroundingRectangle(
