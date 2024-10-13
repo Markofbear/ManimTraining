@@ -2,6 +2,11 @@ from manim import *
 
 class VSCodeTextHighlight(Scene):
     def construct(self):
+        title = Text("Code Highlight", font_size=64)
+        title.to_edge(UP) 
+        line = Line(start=LEFT * 3, end=RIGHT * 3)  
+        line.next_to(title, DOWN, buff=0.1) 
+
         code_string = """
 def hello_world():
     print('Hello, World!')
@@ -18,7 +23,13 @@ def hello_world():
             font="Monospace", 
             insert_line_no=True  
         ).scale(1.5)
-        
+
+        self.play(Write(title), run_time=1)  
+        self.wait(0.5)
+
+        self.play(Create(line), run_time=1)  
+        self.wait(1)
+
         self.play(Write(code), run_time=3)  
         self.wait(1)
 
@@ -56,3 +67,5 @@ def hello_world():
 
         self.play(AnimationGroup(FadeOut(highlight), FadeOut(highlight2), lag_ratio=0.5), run_time=2)  
         self.wait(1)
+
+        self.play(FadeOut(title), FadeOut(line), run_time=1)
