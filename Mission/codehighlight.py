@@ -68,4 +68,16 @@ def hello_world():
         self.play(AnimationGroup(FadeOut(highlight), FadeOut(highlight2), lag_ratio=0.5), run_time=2)  
         self.wait(1)
 
-        self.play(FadeOut(title), FadeOut(line), run_time=1)
+        title_highlight = SurroundingRectangle(
+            title,
+            color=RED,
+            fill_color=RED,
+            fill_opacity=0.4,
+            buff=0.01,
+            stroke_width=0
+        )
+
+        self.play(Create(title_highlight), run_time=1)
+        self.wait(1)
+
+        self.play(FadeOut(title_highlight), FadeOut(title), FadeOut(line), run_time=1)
