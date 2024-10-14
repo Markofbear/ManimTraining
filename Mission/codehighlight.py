@@ -1,6 +1,6 @@
 from manim import *
 
-class VSCodeTextHighlight(Scene):
+class CodeHighlight(Scene):
     def construct(self):
         title = Text("Code Highlight", font_size=64)
         title.to_edge(UP) 
