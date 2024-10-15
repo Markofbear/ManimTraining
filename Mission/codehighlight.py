@@ -21,26 +21,26 @@ def hello_world():
             language="Python",
             background="window",
             font="Monospace", 
-            insert_line_no=True  
-        ).scale(1.5)
+            insert_line_no=False  
+        ).scale(1)
 
-        self.play(Write(title), run_time=1)  
-        self.wait(0.5)
+        # self.play(Write(title), run_time=1)  
+        # self.wait(0.5)
 
-        self.play(Create(line), run_time=1)  
-        self.wait(1)
+        # self.play(Create(line), run_time=1)  
+        # self.wait(1)
 
-        self.play(Write(code), run_time=3)  
-        self.wait(1)
+        # self.play(Write(code), run_time=3)  
+        # self.wait(1)
 
         highlight = SurroundingRectangle(
-            code.code[1][1:6],  
+            code.code[1:][1:],  
             color=YELLOW,
             fill_color=YELLOW,
             fill_opacity=0.4,
             buff=0.01, 
-            stroke_width=0  
-        )
+            stroke_width=0
+        ).stretch_to_fit_width(code.width).align_to(code,LEFT).align_to(code.code[2:],UP)
 
         highlight1 = SurroundingRectangle(
             code.code[2][1:999],  
@@ -60,13 +60,13 @@ def hello_world():
             stroke_width=0  
         )
         
-        self.play(AnimationGroup(Create(highlight), Create(highlight1), Create(highlight2), lag_ratio=0), run_time=2)  
-        self.wait(2)
+        # self.play(AnimationGroup(Create(highlight), Create(highlight1), Create(highlight2), lag_ratio=0), run_time=2)  
+        # self.wait(2)
 
-        self.remove(highlight2)
+        # self.remove(highlight2)
 
-        self.play(AnimationGroup(FadeOut(highlight), FadeOut(highlight1), lag_ratio=0.5), run_time=2)  
-        self.wait(1)
+        # self.play(AnimationGroup(FadeOut(highlight), FadeOut(highlight1), lag_ratio=0.5), run_time=2)  
+        # self.wait(1)
 
         title_highlight = SurroundingRectangle(
             title,
@@ -77,7 +77,8 @@ def hello_world():
             stroke_width=0
         )
 
-        self.play(Create(title_highlight), run_time=1)
-        self.wait(1)
+        self.add(code, highlight)
+        # self.play(Create(title_highlight), run_time=1)
+        # self.wait(1)
 
-        self.play(FadeOut(title_highlight), FadeOut(title), FadeOut(line), run_time=1)
+        # self.play(FadeOut(title_highlight), FadeOut(title), FadeOut(line), run_time=1)
