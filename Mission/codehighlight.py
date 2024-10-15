@@ -6,7 +6,7 @@ class CodeHighlight(Scene):
         title.to_edge(UP) 
         line = Line(start=LEFT * 3, end=RIGHT * 3)  
         line.next_to(title, DOWN, buff=0.1) 
-
+#%%
         code_string = """
 def hello_world():
     print('Hello, World!')
@@ -14,33 +14,39 @@ def hello_world():
     print('Hello, Gandalf!')
     print('Hello, Mathematich Kokchung!')
 """
-
-        code = Code(
-            code=code_string,
+#%%
+        code_options = dict(           
             tab_width=4,
             language="Python",
             background="window",
             font="Monospace", 
-            insert_line_no=False  
-        ).scale(1)
+            insert_line_no=False  )
 
+        code = Code(
+            code=code_string, **code_options
+        ).scale(1)
+        print("hej")
         # self.play(Write(title), run_time=1)  
         # self.wait(0.5)
-
+        
         # self.play(Create(line), run_time=1)  
         # self.wait(1)
 
         # self.play(Write(code), run_time=3)  
         # self.wait(1)
+        print(code.code[-2])
+
+        code_copy = Code(code=code_string.replace(" ",""),**code_options) 
+        # code_copy.code= "print('hej')"
 
         highlight = SurroundingRectangle(
-            code.code[1:][1:],  
+            code_copy.code[0:5],  
             color=YELLOW,
             fill_color=YELLOW,
             fill_opacity=0.4,
             buff=0.01, 
             stroke_width=0
-        ).stretch_to_fit_width(code.width).align_to(code,LEFT).align_to(code.code[2:],UP)
+        ).stretch_to_fit_width(code.width).align_to(code,LEFT)
 
         highlight1 = SurroundingRectangle(
             code.code[2][1:999],  
@@ -82,3 +88,4 @@ def hello_world():
         # self.wait(1)
 
         # self.play(FadeOut(title_highlight), FadeOut(title), FadeOut(line), run_time=1)
+
